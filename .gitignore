@@ -1,0 +1,30 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Yarn Plug'n'Play files
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Environment variable files (keep secrets out of Git)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor-specific directories
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
