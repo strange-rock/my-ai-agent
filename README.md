@@ -77,10 +77,8 @@ v0-embed-zerowidth-agent/
 3. **Configure Environment Variables on Vercel:**  
    In the Vercel project settings, add the following variables:
 
-   - ZEROWIDTH_API_URL:  
-     https://api.zerowidth.ai/v1/process/UvxlzCFXzR3aAgvsD8Nf/jGTpHrmOtyya3SkDfPcN
-   - BEARER_TOKEN:  
-     sk0w-b81313c8251142a0e2b93d290473da0e
+   - ZEROWIDTH_API_URL:  <the specific flow you want to access>
+   - BEARER_TOKEN:  <from the zerowidth api for your flow>
 
 4. **Deploy the Project:**  
    Click "Deploy" in the Vercel dashboard. Monitor the build logs to ensure the project builds successfully.  
