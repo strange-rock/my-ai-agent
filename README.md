@@ -58,9 +58,8 @@ v0-embed-zerowidth-agent/
 5. **Set Up Environment Variables:**  
    Copy .env.example to a new file named ".env" in the project root and update the variables:
 
-   - ZEROWIDTH_API_URL should be set to:  
-     https://api.zerowidth.ai/v1/process/UvxlzCFXzR3aAgvsD8Nf/jGTpHrmOtyya3SkDfPcN
-   - BEARER_TOKEN should be set to your bearer token (e.g., sk0w-b81313c8251142a0e2b93d290473da0e).
+   - ZEROWIDTH_API_URL should be set.
+   - BEARER_TOKEN should be set.
 
 6. **Run the Development Server:**  
    In the terminal, run "npm run dev" and open http://localhost:3000 in your browser to preview the chat component.
