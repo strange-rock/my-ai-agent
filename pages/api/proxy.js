@@ -3,6 +3,9 @@
 // to the zerowidth API endpoint.
 // Verbose comments are included to help beginners understand the flow.
 
+// Import the chat configuration settings.
+import chatConfig from "../../config/config";
+
 export default async function handler(req, res) {
   // Set CORS headers so that our React frontend can communicate with this API.
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -23,9 +26,10 @@ export default async function handler(req, res) {
   const requestBody = req.body;
 
   try {
-    // Read the zerowidth API URL and Bearer token from environment variables.
-    // These should be defined in your .env file (do not commit .env to GitHub).
-    const apiUrl = process.env.ZEROWIDTH_API_URL;
+    //the url is in the config file
+    const apiUrl = chatConfig.flowURL;
+
+    //the bearer token is stored in the environment variable
     const bearerToken = process.env.ZEROWIDTH_API_KEY;
 
     // Forward the request to the zerowidth API endpoint using the fetch API.
