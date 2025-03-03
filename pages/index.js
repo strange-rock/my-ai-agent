@@ -115,9 +115,11 @@ export default function AgentComponent() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Use an effect to scroll to the latest message whenever the conversation updates.
+  // Scroll to the latest message whenever the conversation updates.
   useEffect(() => {
-    scrollToBottom();
+    if (document.querySelector(".chat-container")) {
+      scrollToBottom();
+    }
   }, [conversation]);
 
   /**
@@ -275,7 +277,9 @@ export default function AgentComponent() {
    * @param {*} index
    */
   const handlePromptMouseOver = (index) => {
-    setHoveredIndex(index);
+    if (!isLoading) {
+      setHoveredIndex(index);
+    }
   };
 
   /**
@@ -383,6 +387,7 @@ export default function AgentComponent() {
               onClick={() => handlePromptClick(prompt)}
               onMouseOver={() => handlePromptMouseOver(index)}
               onMouseOut={handlePromptMouseOut}
+              disabled={isLoading}
               style={{
                 padding: "2px 4px",
                 borderRadius: "5px",
