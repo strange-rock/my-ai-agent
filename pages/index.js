@@ -342,7 +342,7 @@ export default function AgentComponent() {
           flexDirection: "column",
           gap: "5px",
           marginBottom: "0px",
-          maxHeight: chatConfig.maxChatHeight, // Set a fixed height for the chat container
+          height: chatConfig.maxChatHeight, // Set a fixed height for the chat container
           overflowY: "auto", // Enable vertical scrolling
           border: "2px solid #000", // Optional: border around the chat area
           padding: "0px",
