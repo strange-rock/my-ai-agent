@@ -293,6 +293,7 @@ export default function AgentComponent() {
     <div
       style={{
         padding: "5px",
+        width: "100vw",
         maxWidth: "600px",
         margin: "0 auto",
         fontFamily: "Arial, sans-serif",
@@ -348,6 +349,7 @@ export default function AgentComponent() {
           padding: "0px",
           borderRadius: "5px 5px 0 0",
           backgroundColor: "#eee",
+          width: "100%",
         }}
       >
         {conversation.map((msg, index) => (
